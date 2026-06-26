@@ -89,6 +89,44 @@ h6 {
   font-family: var(--heading-font);
 }
 
+
+/* -------- Barre de progression compétences -------- */
+.service-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-progress {
+  margin-top: auto;
+  padding-top: 16px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  width: 0%;                        /* départ à 0 pour l'animation */
+  border-radius: 99px;
+  background: linear-gradient(90deg, #4f8ef7, #a78bfa);
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-progress-label {
+  display: block;
+  text-align: right;
+  font-size: 0.75rem;
+  color: #a78bfa;
+  font-weight: 600;
+  margin-top: 5px;
+  letter-spacing: 0.04em;
+}
+
+
+
+
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
